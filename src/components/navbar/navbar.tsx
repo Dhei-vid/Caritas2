@@ -7,7 +7,6 @@ import { navItems } from "@/common/constant";
 
 const Navigation = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  // const [isMobile, setIsMobile] = useState(window.innerWidth <= 700)
   const [isMobile, setIsMobile] = useState(false);
   const location = useLocation();
   const newRef = useRef(null);
@@ -31,22 +30,17 @@ const Navigation = () => {
     setIsMobile(false);
   };
 
-  // const handleOutsideClick = () => {
-  //   setIsMobile(false)
-  // }
-
   // Attach the scroll event listener
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      // Clean up the event listener when the component unmounts
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   // active style
-  const activeStyle = `text-primary after:scale-x-110`;
+  const activeStyle = `text-primary-500 after:scale-x-110`;
 
   return (
     <>
@@ -64,8 +58,8 @@ const Navigation = () => {
               <Link
                 key={id}
                 className={`text-gray-800 ${
-                  location.pathname === "/" ? activeStyle : ""
-                } cursor-pointer hover:text-primary relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
+                  location.pathname === link ? activeStyle : ""
+                } font-semibold cursor-pointer hover:text-primary-500 relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary-500 after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
                 to={link}
               >
                 <span>{label}</span>
@@ -102,7 +96,7 @@ const Navigation = () => {
             <li
               className={`text-gray-800 ${
                 location.pathname === "/" ? activeStyle : ""
-              } cursor-pointer hover:text-primary relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
+              } cursor-pointer hover:text-primary-500 relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary-500 after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
             >
               <Link to={"/"}>Home</Link>
             </li>

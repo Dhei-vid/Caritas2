@@ -8,22 +8,26 @@ import Members from "./pages/Members";
 import Contact from "./pages/Contact-Us";
 import Footer from "./components/footer/footer";
 import Navigation from "./components/navbar/navbar";
+import ScrollToTop from "./components/custom/scroll-to-top";
 
 function App() {
   return (
-    <Routes>
-      <Route path={"/"} element={<Navigation />}>
-        <Route path={"/"} element={<Footer />}>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"/aboutus"} element={<AboutUs />} />
-          <Route path={"/projects"} element={<Projects />} />
-          <Route path={"/gallery"} element={<Gallery />} />
-          <Route path={"/members"} element={<Members />} />
-          <Route path={"/contactus"} element={<Contact />} />
-          <Route path={"/admin"} element={<Admin />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path={"/"} element={<Navigation />}>
+          <Route path={"/"} element={<Footer />}>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/aboutus"} element={<AboutUs />} />
+            <Route path={"/projects"} element={<Projects />} />
+            <Route path={"/gallery"} element={<Gallery />} />
+            <Route path={"/members"} element={<Members />} />
+            <Route path={"/contactus"} element={<Contact />} />
+            <Route path={"/admin"} element={<Admin />} />
+          </Route>
         </Route>
-      </Route>
-    </Routes>
+      </Routes>
+    </>
   );
 }
 

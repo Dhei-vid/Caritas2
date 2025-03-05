@@ -50,7 +50,7 @@ const Members = () => {
         <Label label={"the team"} />
       </div>
       <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
-        {membersDataList.map((member) => {
+        {membersDataList.slice(0, 4).map((member) => {
           return (
             <div key={member.id}>
               <MemberCard data={member} />
