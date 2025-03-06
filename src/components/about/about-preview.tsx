@@ -33,7 +33,8 @@ const AboutUsPreview = () => {
             Mission
           </h2>
           <p className={"text-lg"}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            To Provide Assistance In The Advancement Of The Catholic Faith To
+            Where It Previously Did Not Reach.
           </p>
         </div>
 
@@ -42,7 +43,9 @@ const AboutUsPreview = () => {
             Vision
           </h2>
           <p className={"text-lg"}>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            To Be One Of The World’s Leading Catholic Charity Organizations
+            Helping Parishes Attain Their Set Goals Both In Physical Development
+            And In Evangelization.
           </p>
         </div>
 
