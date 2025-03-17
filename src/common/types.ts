@@ -9,9 +9,10 @@ export interface IProjects {
 
 export interface IMembers {
   id: number;
-  img: string;
+  img: string | null;
   name: string;
   imgDescription: string;
+  position?: string;
   profession?: string;
   phoneNumber?: string;
   email?: string;

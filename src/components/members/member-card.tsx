@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { IMembers } from "@/common/types";
 import MembersDetails from "./members-details";
+import Profile from "../../assets/images/members/default.jpg";
 
 interface IMemberCard {
   data: IMembers;
@@ -11,7 +12,7 @@ const MemberCard: FC<IMemberCard> = ({ data }) => {
     <div className="static drop-shadow-lg rounded-md md:mb-[3rem] mb-[1rem]">
       <div className={"static"}>
         <img
-          src={data.img}
+          src={data.img ?? Profile}
           alt={data.imgDescription}
           className={"rounded-t-md object-cover object-top w-full h-[25rem]"}
         />
@@ -19,7 +20,7 @@ const MemberCard: FC<IMemberCard> = ({ data }) => {
       </div>
       <div className="flex flex-col gap-2 text-center p-2 bg-white drop-shadow-lg rounded-b-md">
         <h2 className="text-2xl text-primary font-bold">{data.name}</h2>
-        <p className="uppercase font-light">{data.profession}</p>
+        <p className="uppercase font-light">{data.position}</p>
       </div>
     </div>
   );
