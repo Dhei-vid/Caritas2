@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router";
-import CustomButton from "../custom/button";
+// import CustomButton from "../custom/button";
 import { Menu, X } from "lucide-react";
 import Logo from "../../assets/icon/CCEF-logo.svg";
 import { navItems } from "@/common/constant";
@@ -66,7 +66,7 @@ const Navigation = () => {
               </Link>
             ))}
 
-            <CustomButton title={"Donate"} onClick={() => {}} />
+            {/* <CustomButton title={"Donate"} onClick={() => {}} /> */}
           </ul>
 
           {/* --- mobile button --- */}
@@ -135,7 +135,7 @@ const Navigation = () => {
             >
               <Link to={"/contactus"}>Contact Us</Link>
             </li>
-            <CustomButton title={"Donate"} onClick={() => {}} />
+            {/* <CustomButton title={"Donate"} onClick={() => {}} /> */}
 
             <li
               className={`${
