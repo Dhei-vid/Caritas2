@@ -19,8 +19,10 @@ const MemberCard: FC<IMemberCard> = ({ data }) => {
         <MembersDetails data={data} />
       </div>
       <div className="flex flex-col gap-2 text-center p-2 bg-white drop-shadow-lg rounded-b-md">
-        <h2 className="text-2xl text-primary font-bold">{data.name}</h2>
-        <p className="uppercase font-light">{data.position}</p>
+        <h2 className="normal-case text-xl text-primary font-bold">
+          {data.name}
+        </h2>
+        <p className="text-sm uppercase font-light">{data.position}</p>
       </div>
     </div>
   );

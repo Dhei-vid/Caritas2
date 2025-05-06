@@ -1,9 +1,8 @@
 import Label from "@/components/ui/label";
-import MemberCard from "@/components/members/member-card";
-import { membersDataList } from "@/common/constant";
 import Members1 from "@/assets/images/members-1.jpg";
 import Members2 from "@/assets/images/members-2.jpg";
 import Members3 from "@/assets/images/members-3.jpg";
+import { ToggleMembers } from "@/components/custom/toggle";
 
 const Members = () => {
   return (
@@ -45,19 +44,7 @@ const Members = () => {
           </div>
         </div>
       </section>
-
-      <div>
-        <Label label={"the team"} />
-      </div>
-      <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
-        {membersDataList.slice(0).map((member) => {
-          return (
-            <div key={member.id}>
-              <MemberCard data={member} />
-            </div>
-          );
-        })}
-      </div>
+      <ToggleMembers />
     </div>
   );
 };

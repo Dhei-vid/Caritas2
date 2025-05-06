@@ -41,3 +41,12 @@ export interface ICaritasHistory {
   paragraph: string;
   display: boolean;
 }
+
+export enum TeamToggle {
+  ALL = "All Members",
+  MANAGEMENT = "Management Team",
+  TRUSTEE = "Trustees",
+  PROJECT = "Project Committee",
+  FINANCE = "Finance Committee",
+  WELFARE = "Welfare committee",
+}
