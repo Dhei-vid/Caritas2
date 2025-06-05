@@ -17,8 +17,8 @@ const Projects = () => {
             various<span className="text-primary-500"> projects</span>
           </h1>
           <p className={"text-gray-500 font-thin"}>
-            Be part of our journey by keeping tabs on what projects we are
-            working on.
+            We have been giving assistance to parishes, priest's and religious
+            since 2004. And we continue to do so today.
           </p>
         </div>
         <div></div>
@@ -51,9 +51,9 @@ const Projects = () => {
             return (
               <div key={project.id}>
                 <ProjectCard
-                  title={project.header}
-                  description={project.description}
-                  cover={project.image}
+                  title={project?.header ?? ""}
+                  description={project?.description ?? ""}
+                  cover={project?.image ?? undefined}
                   inProgress={project.inProgress}
                   location={project.location}
                   isHome={false}

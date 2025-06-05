@@ -1,10 +1,12 @@
 export interface IProjects {
   id: number;
-  header: string;
-  description: string;
-  location: string;
-  image: string;
-  inProgress: boolean;
+  header?: string;
+  description?: string;
+  location?: string;
+  image?: string | undefined;
+  inProgress?: boolean;
+  amount?: number;
+  date?: Date | string;
 }
 
 export interface IMembers {

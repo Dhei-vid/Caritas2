@@ -3,11 +3,11 @@ import { CircleDotDashed, CircleCheckBig, MapPin } from "lucide-react";
 import CustomButton from "../custom/button";
 
 interface IProjectCard {
-  title: string;
-  description: string;
-  cover: string;
-  inProgress: boolean;
-  location: string;
+  title?: string;
+  description?: string;
+  cover?: string | null;
+  inProgress?: boolean;
+  location?: string;
   isHome: boolean;
 }
 
@@ -37,7 +37,7 @@ const ProjectCard: FC<IProjectCard> = ({
         )}
         <div>
           <img
-            src={cover}
+            src={cover ?? "/blocks.jpg"}
             alt={title}
             className={"h-[15rem] w-full bg-contain rounded-t-xl"}
           />
@@ -49,7 +49,7 @@ const ProjectCard: FC<IProjectCard> = ({
             </h3>
             <p className={"text-base"}>{description}</p>
           </div>
-          <div>
+          <div className={"self-baseline mb-0"}>
             {isHome ? (
               <CustomButton title={"Donate"} onClick={() => {}} />
             ) : (

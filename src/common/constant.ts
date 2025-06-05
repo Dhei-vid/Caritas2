@@ -626,126 +626,104 @@ export const welfareCommittee: Array<IMembers> = [
 export const ongoingProjects: Array<IProjects> = [
   {
     id: 1,
-    header: "Feed Hungry Children",
+    header: "Construction of St. Mary Catholic Church",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "24 Nwaniba, Uyo",
-    image:
-      "https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D",
+      "Caritas Foundation has been in support of the construction of the St. Athanasius Parish, Nung Oku Ibesikpo, Ibesikpo LGA from inception till date. We have contributed over 12 million naira to this project, and are invested in seeing it to the end.",
+    location: "St. Athanasius Parish, Nung Oku Ibesikpo, Ibesikpo LGA",
+    image: undefined,
     inProgress: true,
-  },
-  {
-    id: 2,
-    header: "Renovate afagha church building",
-    description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "Ewet Housing, Uyo",
-    image:
-      "https://images.unsplash.com/photo-1682685794690-dea7c8847a50?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MXx8fGVufDB8fHx8fA%3D%3D",
-    inProgress: true,
-  },
-  {
-    id: 3,
-    header: "Buy seats for St. John",
-    description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "Abak road, Uyo",
-    image:
-      "https://images.unsplash.com/photo-1682687221006-b7fd60cf9dd0?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D",
-    inProgress: true,
-  },
-  {
-    id: 4,
-    header: "Feed Hungry Children",
-    description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
-    inProgress: true,
-  },
-  {
-    id: 5,
-    header: "Feed Hungry Children",
-    description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
-    inProgress: true,
-  },
-  {
-    id: 6,
-    header: "Feed Hungry Children",
-    description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
-    inProgress: true,
+    amount: 12000000,
+    date: "Till Date",
   },
 ];
 
 export const completedProjects: Array<IProjects> = [
   {
     id: 1,
-    header: "Feed Hungry Children",
+    header: "Completion of Church building",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "24 Nwaniba, Uyo",
-    image:
-      "https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D",
+      "Caritas organization offered financial support towards the completion of the church building at St. Joseph's parish Atiabang, Okobo.",
+    location: "St. Joseph Parish, Atiabang, Okobo LGA",
+    image: undefined,
     inProgress: false,
+    amount: 150000,
+    date: new Date("2004-05-01"),
   },
   {
     id: 2,
-    header: "Renovate afagha church building",
+    header: "Assistance Towards Completion of Church Building",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "Ewet Housing, Uyo",
-    image:
-      "https://images.unsplash.com/photo-1682685794690-dea7c8847a50?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MXx8fGVufDB8fHx8fA%3D%3D",
+      "Caritas organization offered financial assistance towards the completion of the church building at St. Paul Parish, Afi Uda, Mbo LGA",
+    location: "St. Paul Parish, Afi Uda, Mbo LGA",
+    image: undefined,
     inProgress: false,
+    amount: 150000,
+    date: new Date("2007-05-01"),
   },
   {
     id: 3,
-    header: "Buy seats for St. John",
+    header: "Laying the foundation for Church Building",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "In 2007, Caritas Foundation offered monetary support towards the laying the foundations for the parish building and the accomodation for the priest",
     location: "Abak road, Uyo",
     image:
       "https://images.unsplash.com/photo-1682687221006-b7fd60cf9dd0?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D",
     inProgress: false,
+    amount: 100000000,
+    date: new Date("2007-12-01"),
   },
   {
     id: 4,
-    header: "Feed Hungry Children",
+    header: "Financial Support to the Seminary",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
+      "Caritas Foundation offered financial assistance to the Spiritual Year Seminary, Obio Ibiono",
+    location: "Spiritual Year Seminary, Obio Ibiono",
+    image: undefined,
     inProgress: false,
+    amount: 100000,
+    date: new Date("2009-12-01"),
   },
   {
     id: 5,
-    header: "Feed Hungry Children",
+    header: "Fencing Around the Parish",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "In 2014, Caritas foundation offered monatery support to St. Athanasius Parish to erect a perimeter fence around the Parish Church.",
     location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
+    image: undefined,
     inProgress: false,
+    amount: 75000,
+    date: new Date("2014-12-01"),
   },
   {
     id: 6,
-    header: "Feed Hungry Children",
+    header: "Financial Assistance to St. Hilary Catholic Church",
     description:
-      "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-    location: "St. Pauls nursery/primary school, Mkpatak",
-    image:
-      "https://images.unsplash.com/photo-1698793916605-d0e44deb650e?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D",
+      "Caritas offered financial assistance to St. Hilary Catholic Church.",
+    location: "St. Hilary Catholic Church, East Itam, Itu LGA",
+    image: undefined,
     inProgress: false,
+    amount: 12000000,
+    date: undefined,
+  },
+  {
+    id: 7,
+    header: "Construction of St. Mary Catholic Church",
+    description: "",
+    location: "St. Pauls nursery/primary school, Mkpatak",
+    image: undefined,
+    inProgress: false,
+    amount: 240000,
+    date: undefined,
+  },
+  {
+    id: 8,
+    header: "Roofing Project",
+    description: "",
+    location: "St. Pauls nursery/primary school, Mkpatak",
+    image: undefined,
+    inProgress: false,
+    amount: 240000,
+    date: undefined,
   },
 ];
 
