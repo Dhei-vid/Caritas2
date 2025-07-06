@@ -9,6 +9,7 @@ interface IProjectCard {
   inProgress: boolean;
   location: string;
   isHome: boolean;
+  amount?: number;
 }
 
 const ProjectCard: FC<IProjectCard> = ({
@@ -18,6 +19,7 @@ const ProjectCard: FC<IProjectCard> = ({
   inProgress,
   location,
   isHome,
+  amount,
 }) => {
   return (
     <div className={"bg-white border-[0.5px] rounded-xl h-full"}>
@@ -50,12 +52,33 @@ const ProjectCard: FC<IProjectCard> = ({
             <p className={"text-base"}>{description}</p>
           </div>
           <div>
+            {inProgress ? (
+              <div>
+                <p className={"text-sm"}>
+                  Amount spent so far:{" "}
+                  <span className={"text-lg font-bold text-primary-500"}>
+                    ₦{amount?.toLocaleString()}
+                  </span>
+                </p>
+              </div>
+            ) : (
+              <p className={"text-sm"}>
+                Amount:{" "}
+                <span className={"text-lg font-bold text-primary-500"}>
+                  ₦{amount?.toLocaleString()}
+                </span>
+              </p>
+            )}
+          </div>
+          <div>
             {isHome ? (
               <CustomButton title={"Donate"} onClick={() => {}} />
             ) : (
-              <div className="flex gap-3">
-                <MapPin size={25} color={"#1E514E"} />
-                <p className="text-primary font-thin italic">{location}</p>
+              <div className="flex gap-1 items-center">
+                <MapPin size={15} color={"#1E514E"} />
+                <p className="text-sm text-primary font-thin italic">
+                  {location}
+                </p>
               </div>
             )}
           </div>

@@ -3,8 +3,10 @@ export interface IProjects {
   header: string;
   description: string;
   location: string;
-  image: string;
+  image: string | null;
   inProgress: boolean;
+  date: Date | string | undefined;
+  amount: number;
 }
 
 export interface IMembers {

@@ -1,8 +1,15 @@
 import Label from "@/components/ui/label";
 import ProjectCard from "@/components/project/project-card";
-import { ongoingProjects, completedProjects } from "@/common/constant";
+import { projects } from "@/common/projects";
 
 const Projects = () => {
+  const ongoingProjects = projects.filter(
+    (project) => project.inProgress === true
+  );
+
+  const completedProjects = projects.filter(
+    (project) => project.inProgress === false
+  );
   return (
     <div className={"p-12 md:px-20 px-5"}>
       <section className="grid md:grid-cols-2">
@@ -33,10 +40,11 @@ const Projects = () => {
                 <ProjectCard
                   title={project.header}
                   description={project.description}
-                  cover={project.image}
+                  cover={project?.image ?? "project_default.jpg"}
                   inProgress={project.inProgress}
                   location={project.location}
                   isHome={false}
+                  amount={project?.amount ?? 0}
                 />
               </div>
             );
@@ -53,9 +61,10 @@ const Projects = () => {
                 <ProjectCard
                   title={project.header}
                   description={project.description}
-                  cover={project.image}
+                  cover={project?.image ?? "project_default.jpg"}
                   inProgress={project.inProgress}
                   location={project.location}
+                  amount={project?.amount ?? 0}
                   isHome={false}
                 />
               </div>

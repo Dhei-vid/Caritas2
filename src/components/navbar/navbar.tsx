@@ -59,7 +59,7 @@ const Navigation = () => {
                 key={id}
                 className={`text-gray-800 ${
                   location.pathname === link ? activeStyle : ""
-                } font-semibold cursor-pointer hover:text-primary-500 relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary-500 after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
+                } cursor-pointer hover:text-primary-500 relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary-500 after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
                 to={link}
               >
                 <span>{label}</span>
@@ -137,13 +137,13 @@ const Navigation = () => {
             </li>
             {/* <CustomButton title={"Donate"} onClick={() => {}} /> */}
 
-            <li
+            {/* <li
               className={`${
                 location.pathname === "/admin" ? activeStyle : ""
               } text-gray-800 hover:text-primary relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-110 after:transition after:duration-300 after:origin-center`}
             >
               <Link to={"/admin"}>Admin</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}

@@ -3,10 +3,13 @@ import { useNavigate } from "react-router";
 import CustomButton from "../custom/button";
 import SectionTitle from "../home/section-title.";
 
-import { ongoingProjects } from "@/common/constant";
+import { projects } from "@/common/projects";
 
 const ProjectPreview = () => {
   const navigate = useNavigate();
+  const ongoingProjects = projects.filter(
+    (project) => project.inProgress === true
+  );
 
   const handleNavigation = () => {
     navigate("projects");
@@ -22,17 +25,28 @@ const ProjectPreview = () => {
       <div className="flex md:flex-nowrap flex-wrap gap-7 px-5 justify-center md:[&>*:nth-child(2)]:translate-y-5">
         {ongoingProjects
           .slice(0, 3)
-          .map(({ id, header, image, description, location, inProgress }) => (
-            <ProjectCard
-              key={id}
-              cover={image}
-              title={header}
-              description={description}
-              inProgress={inProgress}
-              location={location}
-              isHome={true}
-            />
-          ))}
+          .map(
+            ({
+              id,
+              header,
+              image,
+              description,
+              location,
+              inProgress,
+              amount,
+            }) => (
+              <ProjectCard
+                key={id}
+                cover={image ?? "project_default.jpg"}
+                title={header}
+                description={description}
+                inProgress={inProgress}
+                location={location}
+                isHome={true}
+                amount={amount ?? 0}
+              />
+            )
+          )}
       </div>
 
       <div className={"py-12"}>
