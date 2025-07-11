@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { CircleDotDashed, CircleCheckBig, MapPin } from "lucide-react";
-import CustomButton from "../custom/button";
 
 interface IProjectCard {
   title: string;
@@ -72,7 +71,7 @@ const ProjectCard: FC<IProjectCard> = ({
           </div>
           <div>
             {isHome ? (
-              <CustomButton title={"Donate"} onClick={() => {}} />
+              <div />
             ) : (
               <div className="flex gap-1 items-center">
                 <MapPin size={15} color={"#1E514E"} />

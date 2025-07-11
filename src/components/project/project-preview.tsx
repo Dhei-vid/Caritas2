@@ -22,7 +22,7 @@ const ProjectPreview = () => {
         subTitle={"We are engaged in a wide range of projects."}
       />
 
-      <div className="flex md:flex-nowrap flex-wrap gap-7 px-5 justify-center md:[&>*:nth-child(2)]:translate-y-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 px-5 justify-center md:[&>*:nth-child(2)]:translate-y-5">
         {ongoingProjects
           .slice(0, 3)
           .map(
