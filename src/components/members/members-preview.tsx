@@ -2,32 +2,41 @@ import MemberCard from "./member-card";
 import { useNavigate } from "react-router";
 import CustomButton from "../custom/button";
 import { membersDataList } from "@/common/constant";
-import SectionTitle from "../home/section-title.";
+import Label from "@/components/ui/label";
 
 const MembersPreview = () => {
   const navigate = useNavigate();
 
   return (
-    <div className={"flex flex-col gap-5 items-center justify-center"}>
-      <SectionTitle
-        title={"MEMBERS"}
-        subTitle={"The people who make Caritas tick."}
-      />
-
-      <div
-        className={`grid md:grid-cols-3 gap-3 justify-center px-12 md:mb-12 mb-4 md:[&>*:nth-child(2)]:translate-y-5 md:[&>*:nth-child(3)]:translate-y-10`}
-      >
-        {membersDataList.slice(0, 3).map((members) => {
-          return (
-            <div key={members.id}>
-              <MemberCard data={members} />
-            </div>
-          );
-        })}
+    <section className="bg-accent-100 px-5 md:px-20 py-20">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <Label label="members" />
+          <h2 className="font-black uppercase text-3xl md:text-4xl text-gray-800 leading-tight mt-1">
+            The people who make{" "}
+            <span className="text-primary-500">Caritas</span> tick.
+          </h2>
+        </div>
+        <p className="text-gray-500 max-w-xs md:text-right text-sm leading-relaxed">
+          Dedicated volunteers committed to serving communities, one act of
+          kindness at a time.
+        </p>
       </div>
 
-      <CustomButton title={"see more"} onClick={() => navigate("members")} />
-    </div>
+      <div className="grid md:grid-cols-3 gap-6 mb-12">
+        {membersDataList.slice(0, 3).map((member) => (
+          <MemberCard key={member.id} data={member} />
+        ))}
+      </div>
+
+      <div className="flex justify-center">
+        <CustomButton
+          title="Meet all members"
+          onClick={() => navigate("members")}
+          style="p-5 px-8"
+        />
+      </div>
+    </section>
   );
 };
 

@@ -7,6 +7,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas offered financial assistance towards completion of Church building.",
     location: "St .Joseph Parish, Atiabang, Okobo LGA",
+    community: "Atiabang",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2004-01-12"),
@@ -18,6 +20,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas offered financial assistance towards completion of Church building.",
     location: "St. Paul Parish, Afi Uda, Mbo LGA",
+    community: "Afi Uda",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2007-01-12"),
@@ -29,6 +33,8 @@ export const projects: Array<IProjects> = [
     description:
       "In 2007, Caritas assisted Sacred Heart Parish, Ibaka by offering financial support towards laying the foundation for the Parish building and Fathers House.",
     location: "Sacred Heart Parish, Ibaka, Mbo LGA",
+    community: "Ibaka",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2007-01-12"),
@@ -40,6 +46,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas Supported the Spiritual Year Seminary with financial Support.",
     location: "Spiritual Year Seminary, Obio Ibiono",
+    community: "Obio Ibiono",
+    category: "education",
     image: null,
     inProgress: false,
     date: new Date("2009-01-12"),
@@ -51,6 +59,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas supported the parish of St. Athanasius, Nung Oku Ibesikpo with finance towards the erection of a perimeter fence around the Parish Church",
     location: "St. Athanasius Parish, Nung Oku Ibesikpo, Ibesikpo LGA",
+    community: "Nung Oku Ibesikpo",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2014-01-12"),
@@ -58,10 +68,12 @@ export const projects: Array<IProjects> = [
   },
   {
     id: 6,
-    header: "Construction of St. Mary Catholic Church",
+    header: "Construction of St. Hilary Catholic Church",
     description:
       "Caritas has been instrumental in the construction of St. Hilary Catholic Church, East Itam. A project that is still ongoing today.",
     location: "St. Hilary Catholic Church, East Itam, Itu LGA",
+    community: "East Itam",
+    category: "building",
     image: null,
     inProgress: true,
     date: "",
@@ -73,6 +85,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas foundation offered financial assistance to St. Hilary Catholic Church, East Itam, Itu LGA",
     location: "St. Hilary Catholic Church, East Itam, Itu LGA",
+    community: "East Itam",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2016-01-12"),
@@ -83,7 +97,9 @@ export const projects: Array<IProjects> = [
     header: "Roofing the Church",
     description:
       "Caritas foundation offered financial assistance to help in roofing the church.",
-    location: "St.    Ikot Inyang Esuk, Uruan LGA",
+    location: "St. Ikot Inyang Esuk, Uruan LGA",
+    community: "Ikot Inyang Esuk",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2016-01-12"),
@@ -95,6 +111,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas foundation offered financial assistance towards completing the St. Charles Parish, Ikot Ebre Church building.",
     location: "St. Charles Parish, Ikot Ebre",
+    community: "Ikot Ebre",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2016-01-12"),
@@ -105,7 +123,9 @@ export const projects: Array<IProjects> = [
     header: "Financial Contribution to the Church Building Project",
     description:
       "Caritas foundation offered financial assistance towards the completion of St. Louis Parish, Mbiopkoro, Nsit Ibom LGA Church building.",
-    location: "St. Charles Parish, Ikot Ebre",
+    location: "St. Louis Parish, Mbiokporo, Nsit Ibom LGA",
+    community: "Mbiokporo",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2018-01-12"),
@@ -116,7 +136,9 @@ export const projects: Array<IProjects> = [
     header: "Financial Support to St. Mary Catholic Church",
     description:
       "Caritas foundation offered financial support to St. Mary Catholic Church.",
-    location: "St. Charles Parish, Ikot Ebre",
+    location: "St. Mary Catholic Church, Ikot Ebre",
+    community: "Ikot Ebre",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2018-01-12"),
@@ -124,11 +146,12 @@ export const projects: Array<IProjects> = [
   },
   {
     id: 12,
-    header:
-      "Financial support to the Witnessing Members of the  Holy Family Sisters",
+    header: "Financial support to the Holy Family Sisters",
     description:
-      "Caritas foundation offered Financial support to the Witnessing Members of the  Holy Family Sisters.",
+      "Caritas foundation offered Financial support to the Witnessing Members of the Holy Family Sisters.",
     location: "St. Charles Parish, Ikot Ebre",
+    community: "Ikot Ebre",
+    category: "education",
     image: null,
     inProgress: false,
     date: new Date("2018-01-12"),
@@ -140,6 +163,8 @@ export const projects: Array<IProjects> = [
     description:
       "Caritas foundation offered financial assistance to St. Louis Parish, Mbiokporo.",
     location: "St. Louis Parish, Mbiokporo, Nsit Ibom LGA",
+    community: "Mbiokporo",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2018-01-12"),
@@ -147,11 +172,12 @@ export const projects: Array<IProjects> = [
   },
   {
     id: 14,
-    header:
-      "Financial assistance for the renovation of St. Lawrence Parish, Eman Uruan",
+    header: "Renovation of St. Lawrence Parish, Eman Uruan",
     description:
       "Caritas foundation offered financial assistance to St. Lawrence Parish, Eman Uruan to help with renovation efforts.",
     location: "St. Lawrence Parish, Eman Uruan, Uruan LGA",
+    community: "Eman Uruan",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2019-01-12"),
@@ -159,11 +185,12 @@ export const projects: Array<IProjects> = [
   },
   {
     id: 15,
-    header:
-      "Support towards the construction of St. Paul Station, Use Ikot Obio",
+    header: "Construction of St. Paul Station, Use Ikot Obio",
     description:
       "Caritas foundation offered financial assistance towards the construction of St. Paul Station, Use Ikot Obio",
-    location: "Assumption Parish, Obio Ibiono. Ibiono Ibom LGA",
+    location: "Assumption Parish, Obio Ibiono, Ibiono Ibom LGA",
+    community: "Use Ikot Obio",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2022-01-12"),
@@ -171,10 +198,12 @@ export const projects: Array<IProjects> = [
   },
   {
     id: 16,
-    header: "Financial assistance for the construction of Father’s  House.",
+    header: "Construction of Father’s House",
     description:
       "Caritas foundation offered financial assistance towards the construction of St. Joseph Quasi Parish, Idu Uruan, Uruan LGA fathers house.",
     location: "St. Joseph Quasi Parish, Idu Uruan, Uruan LGA",
+    community: "Idu Uruan",
+    category: "building",
     image: null,
     inProgress: false,
     date: new Date("2022-01-12"),
@@ -189,6 +218,8 @@ export const corporateCharity: Array<IProjects> = [
     description:
       "Caritas foundation offered financial assistance towards the priestly ordination of Rev. Jude Isuk",
     location: "St. Lawrence Parish, Eman Uruan, Uruan LGA",
+    community: "Eman Uruan",
+    category: "education",
     image: null,
     inProgress: false,
     date: new Date("2022-01-12"),

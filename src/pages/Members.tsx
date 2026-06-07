@@ -6,44 +6,39 @@ import { ToggleMembers } from "@/components/custom/toggle";
 
 const Members = () => {
   return (
-    <div className={"p-12 md:px-20 px-5"}>
-      <section className="grid grid-cols-1 md:grid-cols-2 md:mb-10">
+    <div className="md:px-20 px-5 py-12">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 items-center">
         <div>
-          <Label label={`members`} />
-          <h1 className="font-bold uppercase text-4xl md:text-5xl pb-3 leading-normal tracking-wide">
-            <span className="text-primary">Teamwork </span> makes the caritas{" "}
-            <span className="text-primary">dream</span> work.
-            <span className="text-primary"></span>
+          <Label label="members" />
+          <h1 className="font-black uppercase text-4xl md:text-5xl pb-4 leading-tight text-gray-800">
+            <span className="text-primary-500">Teamwork</span> makes the
+            Caritas <span className="text-primary-500">dream</span> work.
           </h1>
-          <p className="font-thin">
-            Be part of our journey by keeping tabs on what projects we are
-            working on.
+          <p className="text-gray-500">
+            Meet the dedicated people behind the foundation, committed to
+            making a difference one community at a time.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-2 pt-12 md:pt-0">
-          <div className="h-3/4 self-center">
-            <img
-              className="md:w-full w-[100%] md:h-full h-[60%] object-cover rounded-md"
-              src={Members1}
-              alt="Image 1"
-            />
-          </div>
-          <div>
-            <img
-              className="md:w-full w-[100%] md:h-full h-[70%] object-cover rounded-md"
-              src={Members2}
-              alt="Image 2"
-            />
-          </div>
-          <div className="h-3/4 rounded-md self-center">
-            <img
-              className="md:w-full w-[100%] md:h-full h-[60%] object-cover rounded-md"
-              src={Members3}
-              alt="Image 3"
-            />
-          </div>
+
+        <div className="grid grid-cols-3 gap-3 h-72">
+          <img
+            className="w-full h-4/5 mt-auto object-cover rounded-xl shadow"
+            src={Members1}
+            alt="Members"
+          />
+          <img
+            className="w-full h-full object-cover rounded-xl shadow"
+            src={Members2}
+            alt="Members"
+          />
+          <img
+            className="w-full h-4/5 object-cover rounded-xl shadow"
+            src={Members3}
+            alt="Members"
+          />
         </div>
       </section>
+
       <ToggleMembers />
     </div>
   );

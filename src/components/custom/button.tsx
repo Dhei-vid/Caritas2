@@ -11,7 +11,7 @@ const CustomButton: FC<IButton> = ({ title, onClick, style }) => {
   return (
     <Button
       onClick={onClick}
-      className={`${style} transition-all duration-150 ease-in-out hover:bg-transparent bg-primary-500 text-accent-100 hover:text-primary-500 cursor-pointer`}
+      className={`${style} transition-all duration-200 ease-in-out bg-primary-500 hover:bg-primary-100 text-accent-100 hover:text-primary-500 border-primary-500 cursor-pointer`}
       variant={"outline"}
     >
       <p className={"uppercase font-semibold"}>{title}</p>

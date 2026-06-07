@@ -1,31 +1,30 @@
 import CustomButton from "../custom/button";
 import { useNavigate } from "react-router";
+import { ChevronDown } from "lucide-react";
 
 const HomeBanner = () => {
   const navigate = useNavigate();
 
-  const handleNavigation = () => {
-    navigate("aboutus");
-  };
-
   return (
     <div
-      className={`bg-primary-500 bg-[url("@/assets/images/bg_image.png")] bg-cover bg-center bg-no-repeat`}
+      className={`bg-primary-500 bg-[url("@/assets/images/bg_image.png")] bg-cover bg-center bg-no-repeat min-h-[88vh] flex flex-col items-center justify-center text-center px-6 py-20 relative`}
     >
-      <div className="px-5 py-12 md:px-12 flex flex-col text-center place-items-center">
-        <p
-          className={
-            "text-accent-100 my-2 mb-5 mx-5 md:mx-[10rem] lg:mx-[20rem] xl:mx-[22rem] text-base md:text-xl font-bold"
-          }
-        >
-          We are committed to helping communities in need become stable and
-          self-sustaining.
-        </p>
-        <CustomButton
-          title={"learn more about us"}
-          onClick={handleNavigation}
-          style={"p-5"}
-        />
+      <div className="flex flex-col text-5xl md:text-8xl font-black uppercase text-white leading-tight mb-6">
+      <span className="">
+        Caritas Christian{" "}
+      </span>
+        <span className="text-gold tracking-wider">Elders Foundation</span>
+      </div>
+      <p className="text-accent-100 max-w-2xl text-lg md:text-xl font-semibold mb-10">
+        We are committed to promoting the Catholic Faith through assisting in the development of needy parishes and propagating the same faith where it is non-existent.
+      </p>
+      <CustomButton
+        title="learn more about us"
+        onClick={() => navigate("aboutus")}
+        style="p-5 px-8"
+      />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <ChevronDown className="text-white/50" size={32} />
       </div>
     </div>
   );

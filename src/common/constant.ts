@@ -5,6 +5,7 @@ import GerardInohIimg from "@/assets/images/members/gerard_inoh.png";
 import EkobokeImg from "@/assets/images/members/Mr._Ekeboke_Francis.png";
 import UdoetteImg from "@/assets/images/members/udoette.jpg";
 import ObongJosephImg from "@/assets/images/members/obong_joseph.jpg";
+import LinusNkanImg from "@/assets/images/members/HC-Linus-Nkan.jpg";
 
 export const ImageDataList: Array<IImageData> = [
   {
@@ -137,7 +138,7 @@ export const membersDataList: Array<IMembers> = [
   },
   {
     id: 6,
-    img: null,
+    img: LinusNkanImg,
     name: "Dr. Nsikan Linus Nkan",
     imgDescription: "Image of Dr. Nsikan Linus Nkan",
     // position: "Member",
@@ -660,50 +661,50 @@ export const caritasHistory: Array<ICaritasHistory> = [
     id: 1,
     title: "Birth of the Foundation at St. John Parish, Uyo",
     paragraph:
-      "The history of what is now known as Caritas Christian Elders Foundation began at St. John Parish, Abak Road, Uyo, in 1996. Ephraim Anthony Nkanga started hosting his Catholic friends — both priests and lay faithful — at his home on House of Assembly Road, Uyo, to ease the boredom of Easter Monday holidays. The original group included Dr. Emmanuel Philip Effiong, Mr. Boniface Udo Udo, Mr. Nsikan Linus Nkan, Dr. Emmanuel Peter Udofia, Barrister Godwin Gabriel Umoh, Mr. Patrick Dominic Usanga, Mr. Oliver Otu Udoukpo, Mr. Sylvester Okon Akpan, Barrister Christopher Michael Inwang, Mr. Iniobong Michael Eka, Mr. Patrick Udo, Mr. Michael Inyang, and Mr. Anthony Akpanobong (of Blessed Memory). Eventually, five pioneer members dropped out of the Foundation.",
-    timeline: "1998",
+      "What is known today as \"CARITAS CHRISTIAN ELDERS FOUNDATION\" began at St. John Parish Abak Road, Uyo Diocese, Nigeria, in 2006. Mr. Ephraim Anthony Nkanga started hosting his Catholic friends from the parish, including priests at his residence at Akwa Ibom State House of Assembly Road, Uyo to ease the boredom usually associated with Easter Monday holidays. The original group included Dr. Emmanuel Philip Effiong, Mr. Boniface Udo Udo (Late), Mr. Nsikan Linus Nkan, Dr. Emmanuel Peter Udofia, Barrister Godwin Gabriel Umoh, Mr. Patrick Dominic Usanga, Mr. Oliver Otu Udoukpo, Mr. Sylvester Okon Akpan, Barrister Christopher Michael Inwang, Mr. Iniobong Michael Eka, Mr. Patrick Archibong Udoh (Late), Mr. Michael Effiong Inyang, and Mr. Anthony Athanasius Akpanobong (Late). The last five foundation members dropped out of the group shortly afterwards.",
+    timeline: "2006",
     display: true,
   },
   {
     id: 2,
     title: "Formation of St. John Mass Centre",
     paragraph:
-      "Shortly before the creation of St. John Mass Centre, the group, being senior members of the Youth Mass Centre, were selected to serve in the Church Council. When the Mass Centre was elevated to a Quasi-Parish, these members retained their roles.",
-    timeline: "Late 1990s",
+      "Shortly after the creation of St. John Mass Center in 1996, a group made up of senior members of the Youth Mass Center were selected to serve in the church pastoral council. When the Mass Center was elevated to a Quasi-Parish, the same members retained their offices in the pastoral council.",
+    timeline: "1996",
     display: true,
   },
   {
     id: 3,
-    title: "Parish Conflict and Strengthened Brotherhood",
+    title: "Expansion Beyond St. John Parish",
     paragraph:
-      "After the Mass Centre became a full parish, the Council members were tasked with defending parish finances, which brought them into direct confrontation with the parish priest. The persecution that followed only strengthened the bond of brotherhood among the Council members, leading them to formalize their meetings with the goal of spreading the Catholic faith beyond the reach of the Irish missionaries.",
+      "Following the evangelization efforts by the foundation, members from the other parishes within the Diocese of Uyo have come to join the pioneer members at St. John parish.",
     timeline: "Early 2000s",
-    display: false,
+    display: true,
   },
   {
     id: 4,
     title: "The Name 'Elders Forum' is Born",
     paragraph:
-      "When Bishop Joseph Ekuwem (then Bishop of Uyo) ruled in favor of the former Council members, the group adopted the name Elders Forum. The name came from Ephraim Anthony Nkanga and Patrick Dominic Usanga, who were already affectionately called “Elders” by parishioners for their active roles in the parish.",
+      "The name \"Elders Forum\" originated from Mr. Ephraim Anthony Nkanga and Mr. Patrick Dominic Usanga, who were affectionately called \"Elders\" by the parishioners due to their active roles in the parish. In the early days, Dr. Emmanuel Philip Effiong led the group, serving not only as parish council chairman but also as a medical practitioner, which made it difficult for him to function as a leader of the group. The group then unanimously chose Mr. Boniface Udo Udo, known for his human management expertise, to provide the needed leadership. He therefore became the first to adopt the title \"The Eldest\", meaning the Eldest of all the Elders, while Dr. Emmanuel Philip Effiong became the Assistant Eldest.",
     timeline: "Early 2000s",
     display: true,
   },
   {
     id: 5,
     title:
-      "Registration with CAC — Official Naming of Caritas Christian Elders Foundation",
+      "Registration with CAC — Caritas Christian Elders Foundation",
     paragraph:
-      "During registration with the Corporate Affairs Commission (CAC), the group was officially named Caritas Christian Elders Foundation, which remains its name to this day.",
-    timeline: "Mid 2010s",
+      "For the group to operate as a legal entity, it sought for registration with Nigeria's Corporate Affairs Commission (CAC), and was duly registered as \"CARITAS CHRISTIAN ELDERS FOUNDATION\" with their incorporated trustees on June 17, 2014, for the Companies and Allied Matters Act No. 1 of 1990.",
+    timeline: "June 17, 2014",
     display: true,
   },
   {
     id: 6,
     title: "Leadership Milestones",
     paragraph:
-      "In the early days, Dr. Emmanuel Philip Effiong led the Foundation while serving as Parish Council Chairman, but his demanding medical practice made it difficult to continue. The group then unanimously chose Mr. Boniface Udo Udo, known for his management expertise, to lead. He became the first to hold the title of “The Eldest of the Elders”, while Dr. Effiong stepped into the role of Assistant Eldest.",
+      "In the early days, Dr. Emmanuel Philip Effiong led the Foundation while serving as Parish Council Chairman, but his demanding medical practice made it difficult to continue. The group then unanimously chose Mr. Boniface Udo Udo, known for his management expertise, to lead. He became the first to hold the title of \"The Eldest of the Elders\", while Dr. Effiong stepped into the role of Assistant Eldest.",
     timeline: "Timeless",
-    display: true,
+    display: false,
   },
   {
     id: 7,

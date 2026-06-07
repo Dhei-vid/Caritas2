@@ -55,8 +55,8 @@ const Gallery = () => {
       <section>
         <div className="pt-36">
           <p className="text-center text-xl uppercase">
-            <span className="text-primary font-bold">Year</span> by{" "}
-            <span className="text-primary font-bold">year</span> we have
+            <span className="text-primary-500 font-bold">Year</span> by{" "}
+            <span className="text-primary-500 font-bold">year</span> we have
             organized our catalogue of activities
           </p>
         </div>

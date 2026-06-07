@@ -1,8 +1,12 @@
+export type ProjectCategory = "building" | "water" | "health" | "education";
+
 export interface IProjects {
   id: number;
   header: string;
   description: string;
   location: string;
+  community: string;
+  category: ProjectCategory;
   image: string | null;
   inProgress: boolean;
   date: Date | string | undefined;

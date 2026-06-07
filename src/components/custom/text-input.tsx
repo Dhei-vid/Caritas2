@@ -17,21 +17,19 @@ const TextInput: FC<ITextInput> = ({
   ...rest
 }) => {
   return (
-    <div>
-      <div className="relative w-full min-w-[200px] h-16">
-        <label className="block text-gray-700 text-sm font-bold mb-2">
-          {title}
-        </label>
-        <input
-          className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id={name}
-          value={value}
-          type={type}
-          placeholder={placeholder}
-          {...rest}
-        />
-        <p className="text-sm text-red-400">{error}</p>
-      </div>
+    <div className="flex flex-col gap-1 w-full">
+      <label className="text-sm font-semibold text-gray-700" htmlFor={name}>
+        {title}
+      </label>
+      <input
+        className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 text-sm focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-colors placeholder:text-gray-400"
+        id={name}
+        value={value}
+        type={type}
+        placeholder={placeholder}
+        {...rest}
+      />
+      {error && <p className="text-xs text-red-500">{error}</p>}
     </div>
   );
 };

@@ -1,53 +1,61 @@
 import SectionTitle from "../home/section-title.";
+import {
+  Heart,
+  Star,
+  Shield,
+  Flame,
+  Gift,
+  Lightbulb,
+  Leaf,
+} from "lucide-react";
 
 const values = [
   {
     id: 1,
-    icon: "✨",
+    Icon: Heart,
     title: "Honesty",
-    value: "Discover how we put our team at the heart and support each other.",
+    value: "We act with transparency and integrity in all that we do.",
   },
   {
     id: 2,
-    icon: "✈️",
+    Icon: Star,
     title: "Sincerity",
-    value:
-      "We're brave and always trying new things to see what we can discover.",
+    value: "Our commitment to service comes from a genuine place of care.",
   },
   {
     id: 3,
-    icon: "🍀",
+    Icon: Shield,
     title: "Commitment",
     value:
-      "We take responsibility and understand and understand that where there is a will, there is a way.",
+      "We take responsibility and believe that where there is a will, there is a way.",
   },
   {
     id: 4,
-    icon: "👾",
+    Icon: Flame,
     title: "Persistence",
     value:
-      "We are deeply passionate about our work, and this profound love for what we do.",
+      "We are deeply passionate about our work and push through every challenge.",
   },
   {
     id: 5,
-    icon: "💎",
-    title: "Selfless",
+    Icon: Gift,
+    title: "Selflessness",
     value:
-      "We are deeply passionate about our work, and this profound love for what we do.",
+      "We give freely of our time and resources for the good of others.",
   },
   {
     id: 6,
-    icon: "✈️",
+    Icon: Lightbulb,
     title: "Innovative",
     value:
-      "We're brave and always trying new things to see what we can discover.",
+      "We seek new and better ways to reach and serve our communities.",
   },
   {
     id: 7,
-    icon: "✈️",
+    Icon: Leaf,
     title: "Sustainability",
     value:
-      "We're brave and always trying new things to see what we can discover.",
+      "We build programs and projects that create lasting, long-term impact.",
   },
 ];
 
@@ -55,24 +63,23 @@ const CoreValues = () => {
   return (
     <div>
       <SectionTitle
-        title={"Our Core Values"}
-        subTitle="It takes great people to make a great product. Our company culture
-          champions diversity and our team members embody CCEF values."
+        title="Our Core Values"
+        subTitle="It takes great people to make a great organization. Our team members embody these CCEF values."
       />
 
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:px-32 px-10">
-        {values.map((value) => {
-          return (
-            <div
-              key={value.id}
-              className="flex flex-col gap-3 text-center bg-accent-100 p-10 rounded-lg"
-            >
-              {/* <div>{value.icon}</div> */}
-              <p className="font-bold">{value.title}</p>
-              {/* <p>{value.value}</p> */}
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 md:px-20 px-5">
+        {values.map(({ id, Icon, title, value }) => (
+          <div
+            key={id}
+            className="flex flex-col gap-3 bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary-100 transition-all duration-200"
+          >
+            <div className="w-10 h-10 bg-accent-100 rounded-lg flex items-center justify-center">
+              <Icon className="text-primary-500" size={20} />
             </div>
-          );
-        })}
+            <p className="font-bold text-gray-800">{title}</p>
+            <p className="text-sm text-gray-500 leading-relaxed">{value}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

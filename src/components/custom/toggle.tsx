@@ -13,9 +13,9 @@ import Label from "@/components/ui/label";
 
 export const ToggleMembers = () => {
   return (
-    <Tabs className={"py-5"} defaultValue={TeamToggle.ALL}>
+    <Tabs className={"py-5 pt-20"} defaultValue={TeamToggle.ALL}>
       <TabsList
-        className={"text-primary-500 mb-8 border border-neutral-200 p-1"}
+        className="text-primary-500 mb-8 border border-neutral-200 p-1 flex-wrap h-auto gap-1 sticky top-[69px] z-10 bg-white shadow-sm rounded-lg"
       >
         <TabsTrigger value={TeamToggle.ALL}>
           All Members ({membersDataList.length})
@@ -39,7 +39,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.ALL}>
         <Label label={TeamToggle.ALL} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {membersDataList.map((member) => {
             return (
               <div key={member.id}>
@@ -52,7 +52,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.MANAGEMENT}>
         <Label label={TeamToggle.MANAGEMENT} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {managementTeam.map((member) => {
             return (
               <div key={member.id}>
@@ -65,7 +65,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.TRUSTEE}>
         <Label label={TeamToggle.TRUSTEE} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {TrusteesTeam.map((member) => {
             return (
               <div key={member.id}>
@@ -78,7 +78,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.PROJECT}>
         <Label label={TeamToggle.PROJECT} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {projectCommittee.map((member) => {
             return (
               <div key={member.id}>
@@ -91,7 +91,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.FINANCE}>
         <Label label={TeamToggle.FINANCE} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {financeCommittee.map((member) => {
             return (
               <div key={member.id}>
@@ -104,7 +104,7 @@ export const ToggleMembers = () => {
 
       <TabsContent value={TeamToggle.WELFARE}>
         <Label label={TeamToggle.WELFARE} />
-        <div className={"gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
+        <div className={"gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}>
           {welfareCommittee.map((member) => {
             return (
               <div key={member.id}>
