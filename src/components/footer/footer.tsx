@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import { Sparkles } from "lucide-react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { navItems } from "@/common/constant";
 
 const Footer = () => {
@@ -35,12 +35,17 @@ const Footer = () => {
             <ul className="flex flex-col gap-4">
               {navItems.map(({ id, label, link }) => (
                 <li key={id}>
-                  <Link
+                  <NavLink
                     to={link}
-                    className="text-accent-100 hover:text-gold transition duration-300 text-base font-semibold cursor-pointer"
+                    end={link === "/"}
+                    className={({ isActive }) =>
+                      `transition duration-300 text-base font-semibold cursor-pointer ${
+                        isActive ? "text-gold" : "text-accent-100 hover:text-gold"
+                      }`
+                    }
                   >
                     {label}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

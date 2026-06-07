@@ -6,6 +6,8 @@ import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Members from "./pages/Members";
 import Contact from "./pages/Contact-Us";
+import Donate from "./pages/Donate";
+import NotFound from "./pages/Not-Found";
 import Footer from "./components/footer/footer";
 import Navigation from "./components/navbar/navbar";
 import ScrollToTop from "./components/custom/scroll-to-top";
@@ -23,7 +25,9 @@ function App() {
             <Route path={"/gallery"} element={<Gallery />} />
             <Route path={"/members"} element={<Members />} />
             <Route path={"/contactus"} element={<Contact />} />
+            <Route path={"/donate"} element={<Donate />} />
             <Route path={"/admin"} element={<Admin />} />
+            <Route path={"*"} element={<NotFound />} />
           </Route>
         </Route>
       </Routes>

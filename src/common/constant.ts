@@ -82,7 +82,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 2,
     img: JosephEtukImg,
-    name: "Sir. Joseph Michael Etuk",
+    name: "Sir. Joseph Michael Etuk (KSJI)",
     imgDescription: "Image of Joseph Michael Etuk",
     // position: "Assistant Eldest",
     profession: "Town Planner",
@@ -97,7 +97,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 3,
     img: null,
-    name: "Mr. Obong Anthony Okpon",
+    name: "Hon. (Obong) Anthony Effiong Okpon",
     imgDescription: "Image of Obong Anthony Okpo",
     // position: "member",
     profession: "",
@@ -153,7 +153,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 7,
     img: null,
-    name: "Mr. Oliver Udoukpo",
+    name: "Mr. Oliver Otu Udoukpo",
     imgDescription: "Image of Mr. Oliver Udoukpo",
     // position: "Member",
     profession: "",
@@ -167,7 +167,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 8,
     img: null,
-    name: "Mr. Patrick Usanga",
+    name: "Mr. Patrick Dominic Usanga (KSM)",
     imgDescription: "Image of Mr. Patrick Usanga",
     // position: "Member",
     profession: "",
@@ -181,7 +181,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 9,
     img: null,
-    name: "Mr. Ephraim Anthony Nkanga",
+    name: "Eng. Ephraim Anthony Nkanga",
     imgDescription: "Image of Mr. Ephraim Nkanga",
     // position: "Member",
     profession: "Engineering",
@@ -209,7 +209,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 11,
     img: EkobokeImg,
-    name: "Mr.  Ekoboke Joseph",
+    name: "Mr. Ekoboke Luke Joseph (KSM)",
     imgDescription: "Image of Ekoboke Joseph",
     // position: "Member",
     profession: "",
@@ -251,7 +251,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 14,
     img: null,
-    name: "Mr. Anthony Offiong",
+    name: "Mr. Anthony Uko Offiong",
     imgDescription: "Image of Mr. Anthony Offiong",
     // position: "Wellface Officer",
     profession: "Treasurer",
@@ -293,7 +293,7 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 17,
     img: null,
-    name: "Mr. James Ukpong",
+    name: "Sir. James Etim Ukpong (KSJI)",
     imgDescription: "Image of Mr. James Ukpong",
     // position: "Member",
     profession: "",
@@ -307,8 +307,8 @@ export const membersDataList: Array<IMembers> = [
   {
     id: 18,
     img: FelicitaImg,
-    name: "Professor Felicia S. Ekpu",
-    imgDescription: "Image of Joseph Michael Etuk",
+    name: "Prof. (Mrs.) Felicia Saturday Ekpu",
+    imgDescription: "Image of Felicia Saturday Ekpu",
     // position: "Member",
     profession: "Professor",
     phoneNumber: "08033283612",
@@ -644,6 +644,11 @@ export const navItems: Array<INav> = [
   //   label: "Gallery",
   //   link: "/gallery",
   // },
+  {
+    id: 7,
+    label: "Donate",
+    link: "/donate",
+  },
   {
     id: 6,
     label: "Contact Us",
