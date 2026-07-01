@@ -17,6 +17,7 @@ export interface IMembers {
   id: number;
   img: string | null;
   name: string;
+  alias?: string;
   imgDescription: string;
   position?: string;
   profession?: string;

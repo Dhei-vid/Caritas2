@@ -3,11 +3,11 @@ import { IMembers } from "@/common/types";
 import {
   Calendar,
   Briefcase,
-  Church,
-  MapPin,
-  Phone,
-  Mail,
-  Home,
+  // Church,
+  // MapPin,
+  // Phone,
+  // Mail,
+  // Home,
   Plus,
   X,
 } from "lucide-react";
@@ -19,7 +19,7 @@ interface IMemberCard {
 const MemberCard: FC<IMemberCard> = ({ data }) => {
   const [open, setOpen] = useState(false);
 
-  const initials = data.name
+  const initials = data?.alias && data.alias
     .split(" ")
     .slice(0, 2)
     .map((n) => n[0])
@@ -29,11 +29,11 @@ const MemberCard: FC<IMemberCard> = ({ data }) => {
   const details = [
     { icon: Calendar, label: "Member since", value: data.yearJoined, href: undefined },
     { icon: Briefcase, label: "Profession", value: data.profession, href: undefined },
-    { icon: Church, label: "Home Parish", value: data.homeParish, href: undefined },
-    { icon: MapPin, label: "Domiciliary Parish", value: data.domParish, href: undefined },
-    { icon: Home, label: "Address", value: data.Address, href: undefined },
-    { icon: Phone, label: "Phone", value: data.phoneNumber, href: data.phoneNumber ? `tel:${data.phoneNumber}` : undefined },
-    { icon: Mail, label: "Email", value: data.email, href: data.email ? `mailto:${data.email}` : undefined },
+    // { icon: Church, label: "Home Parish", value: data.homeParish, href: undefined },
+    // { icon: MapPin, label: "Domiciliary Parish", value: data.domParish, href: undefined },
+    // { icon: Home, label: "Address", value: data.Address, href: undefined },
+    // { icon: Phone, label: "Phone", value: data.phoneNumber, href: data.phoneNumber ? `tel:${data.phoneNumber}` : undefined },
+    // { icon: Mail, label: "Email", value: data.email, href: data.email ? `mailto:${data.email}` : undefined },
   ].filter((d) => d.value);
 
   return (
@@ -48,15 +48,15 @@ const MemberCard: FC<IMemberCard> = ({ data }) => {
       ) : (
         <div className="w-full h-[25rem] bg-accent-100 flex items-center justify-center">
           <div className="w-28 h-28 rounded-full bg-primary-500 flex items-center justify-center shadow-lg">
-            <span className="text-4xl font-black text-white">{initials}</span>
+            <span className="text-4xl font-black text-white">{initials ?? ""}</span>
           </div>
         </div>
       )}
 
       {/* Name footer */}
       <div className="flex flex-col gap-1 text-center p-3 bg-white">
-        <h2 className="text-xl text-primary-500 font-bold">{data.name}</h2>
-        <p className="text-sm uppercase font-light text-gray-400">
+        <h2 className="text-lg text-primary-500 font-bold">{data.name}</h2>
+        <p className="text-xs uppercase font-light text-gray-400">
           {data.position}
         </p>
       </div>
